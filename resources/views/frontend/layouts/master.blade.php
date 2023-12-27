@@ -20,6 +20,9 @@
 	<!-- Header -->
 	@include('frontend.layouts.header')
 	<!--/ End Header -->
+  <a href="https://wa.me/254725048488" class="whatsapp-float" target="_blank">
+    <img src="{{asset('backend/img/whatsapp-float.png')}}" alt="WhatsApp">
+  </a>
 	@yield('main-content')
 	
 	@include('frontend.layouts.footer')

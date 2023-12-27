@@ -53,8 +53,9 @@
 // Socialite
     Route::get('login/{provider}/', [LoginController::class, 'redirect'])->name('login.redirect');
     Route::get('login/{provider}/callback/', [LoginController::class, 'Callback'])->name('login.callback');
-
-    Route::get('/', [FrontendController::class, 'home'])->name('home');
+    
+    // Route::get('/', [FrontendController::class, 'home'])->name('home');
+    Route::get('/', [FrontendController::class, 'productGrids'])->name('home');
 
 // Frontend Routes
     Route::get('/home', [FrontendController::class, 'index']);
