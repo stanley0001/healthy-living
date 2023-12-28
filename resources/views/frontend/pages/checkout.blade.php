@@ -365,7 +365,7 @@
                                             <li class="shipping">
                                                 Shipping Cost
                                                 @if(count(Helper::shipping())>0 && Helper::cartCount()>0)
-                                                    <select name="shipping" class="nice-select">
+                                                    <select name="shipping" class="nice-select" style="background-color:green">
                                                         <option value="">Select your address</option>
                                                         @foreach(Helper::shipping() as $shipping)
                                                         <option value="{{$shipping->id}}" class="shippingOption" data-price="{{$shipping->price}}">{{$shipping->type}}: Ksh{{$shipping->price}}</option>
@@ -442,7 +442,7 @@
                     <div class="single-service">
                         <i class="ti-rocket"></i>
                         <h4>Free shiping</h4>
-                        <p>Orders over $100</p>
+                        <p>Orders over KSH 100000</p>
                     </div>
                     <!-- End Single Service -->
                 </div>
