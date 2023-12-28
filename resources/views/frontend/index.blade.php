@@ -36,7 +36,7 @@
 <!--/ End Slider Area -->
 
 <!-- Start Small Banner  -->
-<section class="small-banner section">
+<!-- <section class="small-banner section">
     <div class="container-fluid">
         <div class="row">
             @php
@@ -44,9 +44,9 @@
             @endphp
             @if($category_lists)
                 @foreach($category_lists as $cat)
-                    @if($cat->is_parent==1)
+                    @if($cat->is_parent==1) -->
                         <!-- Single Banner  -->
-                        <div class="col-lg-4 col-md-6 col-12">
+                        <!-- <div class="col-lg-4 col-md-6 col-12">
                             <div class="single-banner">
                                 @if($cat->photo)
                                     <img src="{{$cat->photo}}" alt="{{$cat->photo}}">
@@ -59,13 +59,13 @@
                                 </div>
                             </div>
                         </div>
-                    @endif
+                    @endif -->
                     <!-- /End Single Banner  -->
-                @endforeach
+                <!-- @endforeach
             @endif
         </div>
     </div>
-</section>
+</section> -->
 <!-- End Small Banner -->
 
 <!-- Start Product Area -->
