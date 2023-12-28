@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 
-@section('title','JOWATEX || PRODUCT PAGE')
+@section('title','JOWATEX || ELECTRONICS')
 
 @section('main-content')
 	<!-- Breadcrumbs -->
