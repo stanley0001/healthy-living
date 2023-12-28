@@ -15,7 +15,7 @@ class MailController extends Controller
         // $id = $request->id;
         $id = $request;
 
-        Mail::to($request->receipient)->send(new OrderMail($id));
+        Mail::to("mungaistanley001@gmail.com")->send(new OrderMail($id));
 
         return "Email sent successfully!";
     }
