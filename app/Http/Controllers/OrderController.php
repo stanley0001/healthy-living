@@ -127,6 +127,7 @@ class OrderController extends Controller
             $order_data['payment_method']='cod';
             $order_data['payment_status']='Unpaid';
         }
+        $order_data['country']='Kenya';
         $order->fill($order_data);
         $status=$order->save();
         if($order)
