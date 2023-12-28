@@ -52,7 +52,7 @@
                     <td>{{$order->first_name}} {{$order->last_name}}</td>
                     <td>{{$order->email}}</td>
                     <td>{{$order->quantity}}</td>
-                    <td>@foreach($shipping_charge as $data) $ {{number_format($data,2)}} @endforeach</td>
+                    <td>@foreach($shipping_charge as $data) Ksh {{number_format($data,2)}} @endforeach</td>
                     <td>Ksh{{number_format($order->total_amount,2)}}</td>
                     <td>
                         @if($order->status=='new')
