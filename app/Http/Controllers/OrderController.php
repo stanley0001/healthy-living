@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Cart;
 use App\Models\Order;
 use App\Models\Shipping;
+use MailController;
 use App\User;
 use PDF;
 use Notification;
@@ -130,6 +131,7 @@ class OrderController extends Controller
         $order_data['country']='Kenya';
         $order->fill($order_data);
         $status=$order->save();
+        MailController::sendCustomEmail($order->id);
         if($order)
         // dd($order->id);
         $users=User::where('role','admin')->first();
