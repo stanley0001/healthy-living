@@ -362,11 +362,12 @@
                                     <div class="content">
                                         <ul>
 										    <li class="order_subtotal" data-price="{{Helper::totalCartPrice()}}">Cart Subtotal<span>Ksh{{number_format(Helper::totalCartPrice(),2)}}</span></li>
-                                            <li class="shipping">
+                                            <li class="shipping" style="background-color:green">
                                                 Shipping Cost
                                                 @if(count(Helper::shipping())>0 && Helper::cartCount()>0)
-                                                    <select name="shipping" class="nice-select" style="background-color:green">
-                                                        <option value="">Select your address</option>
+                                                    <select name="shipping" class="nice-select" >
+                                                    <option value="">Select your address</option>
+                                                    <option value="1" selected="selected">Nairobi CBD</option>
                                                         @foreach(Helper::shipping() as $shipping)
                                                         <option value="{{$shipping->id}}" class="shippingOption" data-price="{{$shipping->price}}">{{$shipping->type}}: Ksh{{$shipping->price}}</option>
                                                         @endforeach
