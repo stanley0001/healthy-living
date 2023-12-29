@@ -383,7 +383,7 @@
                                             @php
                                                 $total_amount=Helper::totalCartPrice();
                                                 if(session('coupon')){
-                                                    $total_amount=kshtotal_amount-session('coupon')['value'];
+                                                    $total_amount=$total_amount-session('coupon')['value'];
                                                 }
                                             @endphp
                                             @if(session('coupon'))
