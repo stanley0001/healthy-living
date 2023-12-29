@@ -16,7 +16,7 @@ class OrderMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct(private int $id)   
     {
         //
     }
@@ -38,6 +38,9 @@ class OrderMail extends Mailable
     {
         return new Content(
             view: 'emails.order',
+            with: [ 'id' => $this->id ]
+
+ 
         );
     }
 
