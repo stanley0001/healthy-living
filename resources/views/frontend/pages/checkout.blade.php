@@ -365,9 +365,9 @@
                                             <li class="shipping" style="background-color:green">
                                                 Shipping Cost
                                                 @if(count(Helper::shipping())>0 && Helper::cartCount()>0)
+                                                    <p>Select Your Address</p>
                                                     <select name="shipping" class="nice-select" >
-                                                    <option value="">Select your address</option>
-                                                    <option value="1" selected="selected">Nairobi CBD</option>
+                                                    <option value="1">Nairobi CBD</option>
                                                         @foreach(Helper::shipping() as $shipping)
                                                         <option value="{{$shipping->id}}" class="shippingOption" data-price="{{$shipping->price}}">{{$shipping->type}}: Ksh{{$shipping->price}}</option>
                                                         @endforeach
