@@ -319,7 +319,7 @@
                           <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                             <tbody>
                               <tr>
-                                <td> <a href="https://jowatex.com/admin/order/{{$id}}" target="_blank">Click here to see order</a> </td>
+                                <td> <a href="https://jowatex.com/imanage/order/{{$id}}" target="_blank">Click here to see order</a> </td>
                               </tr>
                             </tbody>
                           </table>
