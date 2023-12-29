@@ -121,7 +121,7 @@
 
 // Backend section start
 
-    Route::group(['prefix' => '/brainstechmanage', 'middleware' => ['auth', 'admin']], function () {
+    Route::group(['prefix' => '/imanage', 'middleware' => ['auth', 'admin']], function () {
         Route::get('/', [AdminController::class, 'index'])->name('admin');
         Route::get('/file-manager', function () {
             return view('backend.layouts.file-manager');
