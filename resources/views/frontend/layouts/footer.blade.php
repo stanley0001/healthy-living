@@ -42,7 +42,7 @@
 								<li><a href="#">Money-back</a></li>
 								<li><a href="#">Returns</a></li>
 								<li><a href="#">Shipping</a></li>
-								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Privacy Policy & data protection</a></li>
 							</ul>
 						</div>
 						<!-- End Single Widget -->
