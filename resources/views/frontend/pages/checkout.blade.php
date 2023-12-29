@@ -73,7 +73,7 @@
                                     <div class="col-lg-6 col-md-6 col-12">
                                         <div class="form-group">
                                             <label>Country<span>*</span></label>
-                                            <select name="country" id="country">
+                                            <select name="country" id="country" readonly>
                                                 <option value="AF">Afghanistan</option>
                                                 <option value="AX">Åland Islands</option>
                                                 <option value="AL">Albania</option>
@@ -187,7 +187,7 @@
                                                 <option value="JE">Jersey</option>
                                                 <option value="JO">Jordan</option>
                                                 <option value="KZ">Kazakhstan</option>
-                                                <option value="KE">Kenya</option>
+                                                <option value="KE" selected="selected">Kenya</option>
                                                 <option value="KI">Kiribati</option>
                                                 <option value="KW">Kuwait</option>
                                                 <option value="KG">Kyrgyzstan</option>
@@ -225,7 +225,7 @@
                                                 <option value="MM">Myanmar [Burma]</option>
                                                 <option value="NA">Namibia</option>
                                                 <option value="NR">Nauru</option>
-                                                <option value="NP" selected="selected">Nepal</option>
+                                                <option value="NP">Nepal</option>
                                                 <option value="NL">Netherlands</option>
                                                 <option value="AN">Netherlands Antilles</option>
                                                 <option value="NC">New Caledonia</option>
