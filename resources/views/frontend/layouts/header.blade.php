@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12">
                     <!-- Top Left -->
-                    <div class="top-left">
+                    <!-- <div class="top-left">
                         <ul class="list-main">
                             @php
                                 $settings=DB::table('settings')->get();
@@ -14,14 +14,14 @@
                             <li><i class="ti-headphone-alt"></i>@foreach($settings as $data) {{$data->phone}} @endforeach</li>
                             <li><i class="ti-email"></i> @foreach($settings as $data) {{$data->email}} @endforeach</li>
                         </ul>
-                    </div>
+                    </div> -->
                     <!--/ End Top Left -->
                 </div>
                 <div class="col-lg-6 col-md-12 col-12">
                     <!-- Top Right -->
                     <div class="right-content">
                         <ul class="list-main">
-                        <li><i class="ti-location-pin"></i> <a href="{{route('order.track')}}">Track Order</a></li>
+                        <!-- <li><i class="ti-location-pin"></i> <a href="{{route('order.track')}}">Track Order</a></li> -->
                             {{-- <li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li> --}}
                             @auth 
                                 @if(Auth::user()->role=='admin')
@@ -56,14 +56,14 @@
                     <!--/ End Logo -->
                     <!-- Search Form -->
                     <div class="search-top">
-                        <div class="top-search"><a href="#0"><i class="ti-search"></i></a></div>
+                        <!-- <div class="top-search"><a href="#0"><i class="ti-search"></i></a></div> -->
                         <!-- Search Form -->
-                        <div class="search-top">
+                        <!-- <div class="search-top">
                             <form class="search-form">
                                 <input type="text" placeholder="Search here..." name="search">
                                 <button value="search" type="submit"><i class="ti-search"></i></button>
                             </form>
-                        </div>
+                        </div> -->
                         <!--/ End Search Form -->
                     </div>
                     <!--/ End Search Form -->
@@ -72,17 +72,17 @@
                 <div class="col-lg-8 col-md-7 col-12">
                     <div class="search-bar-top">
                         <div class="search-bar">
-                            <select>
+                            <!-- <select>
                                 <option >All Category</option>
                                 @foreach(Helper::getAllCategory() as $cat)
                                     <option>{{$cat->title}}</option>
                                 @endforeach
-                            </select>
-                            <form method="POST" action="{{route('product.search')}}">
+                            </select> -->
+                            <!-- <form method="POST" action="{{route('product.search')}}">
                                 @csrf
                                 <input name="search" placeholder="Search Products Here....." type="search">
                                 <button class="btnn" type="submit"><i class="ti-search"></i></button>
-                            </form>
+                            </form> -->
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     <div class="right-bar">
                         <!-- Search Form -->
                         <div class="sinlge-bar shopping">
-                            @php 
+                            <!-- @php 
                                 $total_prod=0;
                                 $total_amount=0;
                             @endphp
@@ -101,11 +101,11 @@
                                         $total_amount+=$wishlist_items['amount'];
                                     @endphp
                                 @endforeach
-                           @endif
-                            <a href="{{route('wishlist')}}" class="single-icon"><i class="fa fa-heart-o"></i> <span class="total-count">{{Helper::wishlistCount()}}</span></a>
+                           @endif -->
+                            <!-- <a href="{{route('wishlist')}}" class="single-icon"><i class="fa fa-heart-o"></i> <span class="total-count">{{Helper::wishlistCount()}}</span></a> -->
                             <!-- Shopping Item -->
                             @auth
-                                <div class="shopping-item">
+                                <!-- <div class="shopping-item">
                                     <div class="dropdown-cart-header">
                                         <span>{{count(Helper::getAllProductFromWishlist())}} Items</span>
                                         <a href="{{route('wishlist')}}">View Wishlist</a>
@@ -131,18 +131,18 @@
                                         </div>
                                         <a href="{{route('cart')}}" class="btn animate">Cart</a>
                                     </div>
-                                </div>
+                                </div> -->
                             @endauth
                             <!--/ End Shopping Item -->
                         </div>
-                        {{-- <div class="sinlge-bar">
+                        <!-- {{-- <div class="sinlge-bar">
                             <a href="{{route('wishlist')}}" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                        </div> --}}
+                        </div> --}} -->
                         <div class="sinlge-bar shopping">
-                            <a href="{{route('cart')}}" class="single-icon"><i class="ti-bag"></i> <span class="total-count">{{Helper::cartCount()}}</span></a>
+                            <!-- <a href="{{route('cart')}}" class="single-icon"><i class="ti-bag"></i> <span class="total-count">{{Helper::cartCount()}}</span></a> -->
                             <!-- Shopping Item -->
                             @auth
-                                <div class="shopping-item">
+                                <!-- <div class="shopping-item">
                                     <div class="dropdown-cart-header">
                                         <span>{{count(Helper::getAllProductFromCart())}} Items</span>
                                         <a href="{{route('cart')}}">View Cart</a>
@@ -168,7 +168,7 @@
                                         </div>
                                         <a href="{{route('checkout')}}" class="btn animate">Checkout</a>
                                     </div>
-                                </div>
+                                </div> -->
                             @endauth
                             <!--/ End Shopping Item -->
                         </div>
@@ -191,8 +191,8 @@
                                         <ul class="nav main-menu menu navbar-nav">
                                             <li class="{{Request::path()=='home' ? 'active' : ''}}"><a href="{{route('home')}}">Home</a></li>
                                             <li class="{{Request::path()=='about-us' ? 'active' : ''}}"><a href="{{route('about-us')}}">About Us</a></li>
-                                            <li class="@if(Request::path()=='product-grids'||Request::path()=='product-lists')  active  @endif"><a href="{{route('product-grids')}}">Products</a><span class="new">New</span></li>												
-                                                {{Helper::getHeaderCategory()}}
+                                            <!-- <li class="@if(Request::path()=='product-grids'||Request::path()=='product-lists')  active  @endif"><a href="{{route('product-grids')}}">Products</a><span class="new">New</span></li>												
+                                                {{Helper::getHeaderCategory()}} -->
                                             <li class="{{Request::path()=='blog' ? 'active' : ''}}"><a href="{{route('blog')}}">Blog</a></li>									
                                                
                                             <li class="{{Request::path()=='contact' ? 'active' : ''}}"><a href="{{route('contact')}}">Contact Us</a></li>
