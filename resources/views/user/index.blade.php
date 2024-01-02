@@ -93,7 +93,7 @@
       @endphp
       <!-- Order -->
       <div class="col-xl-12 col-lg-12">
-        <table class="table table-bordered" id="order-dataTable" width="100%" cellspacing="0">
+        <!-- <table class="table table-bordered" id="order-dataTable" width="100%" cellspacing="0">
           <thead>
             <tr>
               <th>S.N.</th>
@@ -153,7 +153,7 @@
                 <td colspan="8" class="text-center"><h4 class="my-4">You have no order yet!! Please order some products</h4></td>
               @endif
           </tbody>
-        </table>
+        </table> -->
 
         {{$orders->links()}}
       </div>

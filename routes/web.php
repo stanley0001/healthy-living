@@ -175,6 +175,7 @@
 
 // User section start
     Route::group(['prefix' => '/user', 'middleware' => ['user']], function () {
+        // Route::get('user-post/comment', [HomeController::class, 'userComment'])->name('user.post-comment.index');
         Route::get('/', [HomeController::class, 'index'])->name('user');
         // Profile
         Route::get('/profile', [HomeController::class, 'profile'])->name('user-profile');
